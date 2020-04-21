@@ -22,7 +22,12 @@ var numbers = '0, 1, 2, 3, 4, 5, 6, 7, 8, 9';
 var userSelects = '';
 var password = '';
 
-function userOptions(available) {
+function userOptions(charsIncluded) {
+  var passwordLength = 0;
+  while (passwordLength < 8 || passwordLength > 128) {
+   var passwordLength = prompt('How many characters would you like to include? Choose between 8-128');
+ 
+
   var hasNumbers = confirm('Would you like to include numbers 0-9?');  
   var hasLowers = confirm('Would you like to include lowercase letters?'); 
   var hasUppers = confirm('Would you like to include uppercase letters?');
@@ -46,4 +51,4 @@ function userOptions(available) {
   }
 }
 
-
+userOptions();
