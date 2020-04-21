@@ -22,4 +22,28 @@ var numbers = '0, 1, 2, 3, 4, 5, 6, 7, 8, 9';
 var userSelects = '';
 var password = '';
 
+function userOptions(available) {
+  var hasNumbers = confirm('Would you like to include numbers 0-9?');  
+  var hasLowers = confirm('Would you like to include lowercase letters?'); 
+  var hasUppers = confirm('Would you like to include uppercase letters?');
+  var hasChars = confirm('Would you like to include special characters?');
+
+  if (hasNumbers === true) {
+    userSelects.push(numbers);
+    alert('You have included numbers');
+  }
+  if (hasLowers === true) {
+    userSelects.push(lowerCase);
+    alert('You have included lowercase letters');
+  }
+  if (hasUppers === true) {
+    userSelects.push(upperCase);
+    alert('You have included uppercase letters');
+  }
+  if (hasChars === true) {
+    userSelects.push(specChars);
+    alert('You have included special characters');
+  }
+}
+
 
