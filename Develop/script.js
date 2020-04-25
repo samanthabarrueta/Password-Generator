@@ -1,3 +1,13 @@
+function numOfChars(passwordLength) {
+  var passwordLength = 0;
+
+  while (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = prompt('How many characters would you like to include? Choose between 8-128');
+  
+  return passwordLength;
+  }
+}
+
 function userOptions(userSelects) {
   var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var upperCase = ["A", "B", "C", "D", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
