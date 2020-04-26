@@ -57,9 +57,10 @@ function typeOfChars(passwordChars) {
 function generatePassword(passwordLength, passwordChars, password){
   var userLength = numOfChars(passwordLength);
   var userChars = typeOfChars(passwordChars).flat();
+  var password = "";
 
   for (var i = 0; i < userLength; i++) {
-    password = password + userChars[Math.floor(Math.random() * userChars.length)];
+    password += userChars[Math.floor(Math.random() * userChars.length)];
   }
   return password;
 }
