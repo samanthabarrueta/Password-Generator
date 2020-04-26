@@ -3,9 +3,8 @@ function numOfChars(passwordLength) {
 
   while (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt('How many characters would you like to include? Choose between 8-128');
-  
-  return passwordLength;
   }
+  return passwordLength;
 }
 
 function typeOfChars(passwordChars) {
@@ -35,8 +34,7 @@ function typeOfChars(passwordChars) {
   if (hasSpecChars === true) {
     passwordChars.push(specChars);
     alert('You have included special characters');
-
+  }
   return passwordChars;
   console.log(passwordChars);
-  }
 }
