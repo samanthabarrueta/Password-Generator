@@ -36,5 +36,15 @@ function typeOfChars(passwordChars) {
     alert('You have included special characters');
   }
   return passwordChars;
-  console.log(passwordChars);
 }
+
+function generatePassword(passwordLength, passwordChars, password){
+  var userLength = numOfChars(passwordLength);
+  var userChars = typeOfChars(passwordChars).flat();
+
+  for (var i = 0; i < userLength; i++) {
+    password = password + userChars[Math.floor(Math.random() * userChars.length)];
+  }
+  return password;
+}
+  
